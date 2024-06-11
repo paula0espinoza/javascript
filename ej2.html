@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejemplo var vs let</title>
+    </head>
+    <body>
+        <h1>Ejemplo var vs let</h1>
+        <button onclick="ejemplo()">Ejecutar ejemplo</button>
+        <script>
+            function ejemplo(){
+                var x=10;
+                let y=20;
+                
+                if (true){
+
+                var x=30;
+                let y=40;
+                    console.log(x); // cual es el valor de r1?
+                console.log(y); //cual es el valor de r2?
+                }
+            console.log(x); //cual es el valor de r3
+            console.log(y); // cual es el valor de r4
+            }
+        </script>
+    </body>
+</html>

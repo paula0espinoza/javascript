@@ -1,0 +1,2 @@
+const elemento=document.getElementById("demo"); //se declara un const "elemento", atraves de document, se aplica el metodo .getelementbyid(), de el document HTML traiga el elemnto que tenga como id demo 
+elemento.style.color='red';

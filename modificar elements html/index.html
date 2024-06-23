@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Document</title>
+    <script src="index.js"></script>
+</head>
+<body>
+    <form action="/action_page.php">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required></input><br><br>
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" name="apellido" required> <br><br>
+        <label for="estadoCivil">Estado Civil</label>
+        <select id="estadoCivil" onchange="nombrePareja()">
+            <option value="soltero" select="true">Soltero</option>
+            <option value="union">Union convivencional</option>
+            <option value="casado">Casado</option>
+            <option value="viudo">Viudo</option>
+        </select>
+        <br><br>
+        <input type="submit" value="enviar" id="enviar">
+
+    </form>
+</body>
+</html>

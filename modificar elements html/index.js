@@ -28,10 +28,9 @@ function nombrePareja(){
         document.body.appendChild(boton);//agrega el boton, para que quede debajo de los elementos que nosostros queremos
     }
 
-    else if ((seleccion=="soltero")||(seleccion=="viudo")) {
-        const etiqueta=document.getElementById("labelnombrepareja")
+     else if ((seleccion=="soltero")||(seleccion=="viudo")) {
+        const etiqueta=document.getElementById("labelnombrepareja");
+        etiqueta.remove();
+        const input=document.getElementById("nombepareja");
+        input.remove();
     }
-
-
-
-}
